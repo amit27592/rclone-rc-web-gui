@@ -165,7 +165,7 @@ function openPath(path, filesPanelID)
     let div = ""
         .concat(`<div class='fileLine folderLine'
             onclick="openPath('${basePath.substring(0, lastSlash - 1).replace(/'/g, "\\'")}', '${filesPanelID}');">`)
-        .concat("<img class='icon' src='/images/file.svg' />")
+        .concat("<img class='icon' src='./images/file.svg' />")
         .concat("<p>..</p>")
         .concat("</div>");
     filesPanel.appendChild(htmlToElement(div));
@@ -207,7 +207,7 @@ function openPath(path, filesPanelID)
             {
                 div = div.concat(`<div class='fileLine' data-type='file' data-path="${fileNamePath}">`)
             }
-            div = div.concat("<img class='icon' src='/images/", getIconType(listOfFilesAndFolders[r]["MimeType"]), "' />")
+            div = div.concat("<img class='icon' src='./images/", getIconType(listOfFilesAndFolders[r]["MimeType"]), "' />")
                 .concat("<p>", fileName, "</p>")
                 .concat("</div></div>");
             filesPanel.appendChild(htmlToElement(div));

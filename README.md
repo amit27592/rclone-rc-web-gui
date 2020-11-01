@@ -45,6 +45,13 @@ At the same time, the nice-looking part has the lowest priority for me, so expec
 
 ## How to use it
 
+###Quick Setup
+In a bind, just run this (Without changing `YOUR-USERNAME` or `YOUR-PASSWORD`) and go to https://amitgupta.dev/rclone-rc-web-gui/
+```
+rclone rcd --transfers 1 --rc-user YOUR-USERNAME --rc-pass YOUR-PASSWORD --rc-allow-origin https://amitgupta.dev
+```
+
+###Normal setup
 First of all, set your `rclone rcd` host, port, username and password in `/js/settings.js`. Also make sure that you have your remotes configured in `~/.config/rclone/rclone.conf` on the host where you will be running `rclone rcd`.
 
 ### Launch
