@@ -6,10 +6,10 @@
 
     <title>rclone rc GUI</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
 
-    <link rel="stylesheet" href="/css/gui.css" />
-    <link rel="stylesheet" href="/css/gui-mobile.css" />
+    <link rel="stylesheet" href="./css/gui.css" />
+    <link rel="stylesheet" href="./css/gui-mobile.css" />
 </head>
 <body>
     <div class="body-block header">
@@ -70,10 +70,14 @@
                         </select>
                         <div>Items:&nbsp;<span class="filesCount">-</span></div>
                     </div>
+                    <div class="path-folder">
+                        <input type="text" placeholder="Current Path" />
+                        <button type="button" onclick="goClicked(this, 'leftPanelFiles');">Go</button>
+                    </div>
                     <div class="panelFilesContainer">
                         <div id="leftPanelFiles" class="filesList">
                             <div class="fileLine">
-                                <img class='icon' src="/images/file.svg" />
+                                <img class='icon' src="./images/file.svg" />
                                 <p>..</p>
                             </div>
                         </div>
@@ -105,10 +109,14 @@
                         </select>
                         <div>Items:&nbsp;<span class="filesCount">-</span></div>
                     </div>
+                    <div class="path-folder">
+                        <input type="text" placeholder="Current Path" />
+                        <button type="button" onclick="goClicked(this, 'rightPanelFiles');">Go</button>
+                    </div>
                     <div class="panelFilesContainer">
                         <div id="rightPanelFiles" class="filesList">
                             <div class="fileLine">
-                                <img class='icon' src="/images/file.svg" />
+                                <img class='icon' src="./images/file.svg" />
                                 <p>..</p>
                             </div>
                         </div>
@@ -150,8 +158,8 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="/js/settings.js"></script>
-    <script type="text/javascript" src="/js/functions.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="./js/settings.js"></script>
+    <script type="text/javascript" src="./js/functions.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
